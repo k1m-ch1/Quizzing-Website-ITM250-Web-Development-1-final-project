@@ -1,5 +1,10 @@
 # Quizzing-Website-ITM250-Web-Development-1-final-project
+
 simple quizzing website
+
+# Notes
+
+- I've stored the assets [here](quiz.k1mch1.space)
 
 # Project Requirements
 

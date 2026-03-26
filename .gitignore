@@ -1,0 +1,9 @@
+*.png
+*.jpg
+*.wav
+*.ogg
+*.flac
+*.mp3
+**/assets
+**/images
+**/audio
