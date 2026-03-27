@@ -40,27 +40,27 @@ and fieldsets
 
 ## General stuff
 
-- [] format the \texttt{html} page with proper semantic elements
-- [] use external \texttt{css} for styling 
-- [] make the site mobile friendly through responsive layouts like \texttt{flexbox} and \texttt{css}
+- [] format the `html` page with proper semantic elements
+- [] use external `css` for styling 
+- [] make the site mobile friendly through responsive layouts like `flexbox` and `css`
 - [] use fonts using Google Fonts
 - [] include tables in the quizzes
 - [] include images and multimedia elements in the quizzes
 - [] include forms to report issues, and to submit quizzes will be used
-- [] include proper \texttt{css} styling will be used to make the site easy to use
+- [] include proper `css` styling will be used to make the site easy to use
 
 ## Pages
 
 - [] Home: there will be a hero section, a short description, and a list of quizzes available
-- [] Documentation: contains the correct \texttt{html} format for quiz creation, such that it's easy and repeatable to create new quizzes (We'll simply inject that \texttt{html} into the body of a simple template page we define for now).
+- [] Documentation: contains the correct `html` format for quiz creation, such that it's easy and repeatable to create new quizzes (We'll simply inject that `html` into the body of a simple template page we define for now).
   - [] figure out that correct format
   - [] also try to do the bare minimum to prevent easy cheating
 - [] Submit a quiz: we'll have a form to allow visitors to submit their quizzes to be hosted on our website
-- [] \texttt{mp3} vs \texttt{wav}: a quiz to test whether the test taker can hear the difference between the lossy \texttt{mp3} audio vs the lossless \texttt{wav} audio format. We may also include different lossy audio compression formats such as \texttt{m4a}, \texttt{opus}, \texttt{ogg}, with different bitrates. This quiz demonstrates the usage of audio elements.
+- [] `mp3` vs `wav`: a quiz to test whether the test taker can hear the difference between the lossy `mp3` audio vs the lossless `wav` audio format. We may also include different lossy audio compression formats such as `m4a`, `opus`, `ogg`, with different bitrates. This quiz demonstrates the usage of audio elements.
   - [] make sure to include fall back text, make sure to include only non-copyrighted music
 - [] Guess the song quiz
   - [] just play sections of copyrighted music
-- [] \texttt{png} vs \texttt{jpg}: a quiz to test whether we can see the difference between the lossless \texttt{png} image compression format vs the \texttt{jpg} image compression format. We may also include the \texttt{heic} and use different compression ratios
+- [] `png` vs `jpg`: a quiz to test whether we can see the difference between the lossless `png` image compression format vs the `jpg` image compression format. We may also include the `heic` and use different compression ratios
 - [] Guess the flag quiz
 
 
