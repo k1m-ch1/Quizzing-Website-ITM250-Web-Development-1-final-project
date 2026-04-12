@@ -4,7 +4,7 @@ simple quizzing website
 
 # Notes
 
-- I've stored the assets [here](quiz.k1mch1.space)
+- I've stored the assets [here](https://quiz.k1mch1.space)
 
 # Project Requirements
 
