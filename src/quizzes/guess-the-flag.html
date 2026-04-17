@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flag Quiz</title>
+        <link rel="stylesheet" href="../css/guess-the-flag.css">
+
+    </head>
+    <body class="quiz-body">
+        <header class="quiz-header">
+            <nav>
+                <a href="../index.html">Home</a>
+            </nav>
+        </header>
+
+        <main class="quiz-main">
+            <h1>Guess the Flag Quiz</h1>
+
+            <section id="instructions" class="quiz-page">
+                <h2>How to Play</h2>
+                <ul>
+                    <li>There are <strong>5 flag questions</strong>.</li>
+                    <li>Each question shows one flag — pick the country it belongs to.</li>
+                    <li>You must answer <strong>correctly</strong> to move to the next flag.</li>
+                    <li>A wrong answer ends the quiz and shows your score.</li>
+                    <li>Finish all 5 correctly for a perfect score!</li>
+                </ul>
+                <button class="btn" onclick="showPage('q1')">Begin Quiz</button>
+            </section>
+
+            <section id="q1" class="quiz-page">
+                <p class="progress">Question 1 of 5</p>
+                <figure>
+                    <img src="../../assets/images/flags/flag1.svg" alt="Flag 1">
+                </figure>
+                <fieldset>
+                    <legend>Which country does this flag belong to?</legend>
+                    <label><input type="radio" name="q1" value="wrong"> A) France</label>
+                    <label><input type="radio" name="q1" value="correct"> B) Italy</label>
+                    <label><input type="radio" name="q1" value="wrong"> C) Netherlands</label>
+                    <label><input type="radio" name="q1" value="wrong"> D) Russia</label>
+                </fieldset>
+                <div class="feedback" id="fb1"></div>
+                <button class="btn" onclick="checkAnswer('q1', 'fb1', 'q2')">Submit</button>
+            </section>
+
+            <section id="q2" class="quiz-page">
+                <p class="progress">Question 2 of 5</p>
+                <figure>
+                    <img src="../../assets/images/flags/flag2.svg" alt="Flag 2">
+                </figure>
+                <fieldset>
+                    <legend>Which country does this flag belong to?</legend>
+                    <label><input type="radio" name="q2" value="wrong"> A) Japan</label>
+                    <label><input type="radio" name="q2" value="wrong"> B) South Korea</label>
+                    <label><input type="radio" name="q2" value="correct"> C) North Korea</label>
+                    <label><input type="radio" name="q2" value="wrong"> D) China</label>
+                </fieldset>
+                <div class="feedback" id="fb2"></div>
+                <button class="btn" onclick="checkAnswer('q2', 'fb2', 'q3')">Submit</button>
+            </section>
+
+            <section id="q3" class="quiz-page">
+                <p class="progress">Question 3 of 5</p>
+                <figure>
+                    <img src="../../assets/images/flags/flag3.svg" alt="Flag 3">
+                </figure>
+                <fieldset>
+                    <legend>Which country does this flag belong to?</legend>
+                    <label><input type="radio" name="q3" value="correct"> A) Brazil</label>
+                    <label><input type="radio" name="q3" value="wrong"> B) Argentina</label>
+                    <label><input type="radio" name="q3" value="wrong"> C) Mexico</label>
+                    <label><input type="radio" name="q3" value="wrong"> D) Colombia</label>
+                </fieldset>
+                <div class="feedback" id="fb3"></div>
+                <button class="btn" onclick="checkAnswer('q3', 'fb3', 'q4')">Submit</button>
+            </section>
+
+            <section id="q4" class="quiz-page">
+                <p class="progress">Question 4 of 5</p>
+                <figure>
+                    <img src="../../assets/images/flags/flag4.svg" alt="Flag 4">
+                </figure>
+                <fieldset>
+                    <legend>Which country does this flag belong to?</legend>
+                    <label><input type="radio" name="q4" value="correct"> A) Cambodia</label>
+                    <label><input type="radio" name="q4" value="wrong"> B) Laos</label>
+                    <label><input type="radio" name="q4" value="wrong"> C) Myanmar</label>
+                    <label><input type="radio" name="q4" value="wrong"> D) Malaysia</label>
+                </fieldset>
+                <div class="feedback" id="fb4"></div>
+                <button class="btn" onclick="checkAnswer('q4', 'fb4', 'q5')">Submit</button>
+            </section>
+
+            <section id="q5" class="quiz-page">
+                <p class="progress">Question 5 of 5</p>
+                <figure>
+                    <img src="../../assets/images/flags/flag5.svg" alt="Flag 5">
+                </figure>
+                <fieldset>
+                    <legend>Which country does this flag belong to?</legend>
+                    <label><input type="radio" name="q5" value="wrong"> A) Egypt</label>
+                    <label><input type="radio" name="q5" value="correct"> B) South Africa</label>
+                    <label><input type="radio" name="q5" value="wrong"> C) Madagascar</label>
+                    <label><input type="radio" name="q5" value="wrong"> D) Algeria</label>
+                </fieldset>
+                <div class="feedback" id="fb5"></div>
+                <button class="btn" onclick="checkAnswer('q5', 'fb5', 'result')">Submit</button>
+            </section>
+
+            <section id="result" class="quiz-page">
+                <h2>Quiz Complete!</h2>
+                <p id="result-msg"></p>
+                <p>Your score: <strong id="score"></strong> / 5</p>
+                <button class="btn" onclick="restartQuiz()">Try Again</button>
+                <a href="../index.html" class="btn" style="margin-left:0.6rem; text-decoration:none;">Home</a>
+            </section>
+        </main>
+
+        <footer class="quiz-footer">
+            <p>&copy; 2026 Quiz Game. Group 3. INFO 250. All rights reserved.</p>
+        </footer>
+
+        <script src="../js/guess-the-flag.js"></script>
+    </body>
+</html>

@@ -1,0 +1,203 @@
+@import "./colors.css";
+
+.quiz-body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: var(--color17);
+    color: var(--color16);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz-header {
+    background: var(--color18);
+    padding: 0.9rem 2rem;
+}
+
+.quiz-header nav a {
+    color: var(--color17);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+}
+
+.quiz-header nav a:hover {
+    text-decoration: underline;
+    color: var(--color19);
+}
+
+.quiz-main {
+    flex: 1;
+    padding: 2rem 1rem;
+}
+
+.quiz-main > h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color18);
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.02em;
+}
+
+.quiz-footer {
+    background: var(--color18);
+    color: var(--color17);
+    text-align: left;
+    padding: 0.75rem;
+    font-size: 0.82rem;
+    font-style: italic;
+    position: sticky;
+    bottom: 0;
+}
+
+/* Quiz card */
+
+.quiz-page {
+    display: none;
+}
+
+.quiz-page {
+    max-width: 560px;
+    margin: 1.8rem auto 0;
+    padding: 2rem 2.2rem;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 18px rgba(30, 64, 175, 0.1);
+}
+
+.quiz-page h2 {
+    color: var(--color18);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+/* Flag image */
+
+.quiz-page figure {
+    text-align: center;
+    margin: 0 0 1.6rem;
+}
+
+.quiz-page figure img {
+    width: 280px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* Radio options */
+
+.quiz-page fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 1.2rem;
+}
+
+.quiz-page fieldset legend {
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.quiz-page label {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin: 0.45rem 0;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.quiz-page label:hover {
+    background: #eff6ff;
+    border-color: #93c5fd;
+}
+
+/* Feedback */
+
+.feedback {
+    margin: 0.8rem 0;
+    font-weight: 600;
+    min-height: 1.3em;
+    font-size: 0.95rem;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: var(--color20);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: background 0.15s, transform 0.1s;
+}
+
+.btn:hover {
+    background: var(--color18);
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Instructions page */
+
+#instructions ul {
+    margin: 0.8rem 0 1.6rem 1.4rem;
+    line-height: 2;
+    color: var(--color16);
+}
+
+/* Progress indicator */
+
+.progress {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--color20);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    margin-bottom: 1.2rem;
+}
+
+/* Result page */
+
+#result {
+    text-align: center;
+}
+
+#result h2 {
+    font-size: 2rem;
+    color: var(--color18);
+    margin-bottom: 0.6rem;
+}
+
+#result p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    color: var(--color16);
+}
+
+#result strong {
+    color: var(--color18);
+    font-size: 1.2rem;
+}
+
+#result .btn {
+    margin: 0.3rem 0.3rem 0;
+}
