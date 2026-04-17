@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Template</title>
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="q1.css">
+</head>
+<body>
+    <!-- Start Screen Overlay -->
         <header>
-          <div class="stat-box">
+        <div class="stat-box">
             <div class="stat-label">Score</div>
             <div class="stat-value" id="score">0</div>
-          </div>
+        </div>
         <div class="stat-box">
             <div class="stat-label">Round</div>
             <div class="stat-value"><span id="current-round">1</span>/<span id="total-rounds">10</span></div>
@@ -21,9 +21,8 @@
             <div class="stat-label">Streak</div>
             <div class="stat-value" id="streak">0</div>
         </div>
-      </header>
-    <main>
-        <div id="start-screen" class="screen-overlay">
+    </header>
+            <div id="start-screen" class="screen-overlay">
             <h1>JPEG vs PNG</h1>
             <p>Can you identify the image format just by looking?</p>
             
@@ -34,13 +33,59 @@
                 • If the image has a <strong>solid background</strong> hiding the grid, it's likely a JPEG.<br>
                 • Also look for compression "noise" (JPEG) vs clean edges (PNG).
             </div>
-
-            <button class="btn-start" onclick="game.start()">Start Quiz</button>
+            <button class="btn-start" onclick="gamestart()">Start Quiz</button>
+            <!-- The Quiz Area -->
+    </div>
+    <div id="game-area" class="box hidden">
+        <div class="gameheader">
+        <h1>Game Active!</h1>
+        <p>You are now playing.</p>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2026 Quiz Game. Group 3. INFO 250. All rights reserved.</p>
-    </footer>
-  
-  </body>
+    <!-- The image area -->
+    <div class="image-container">
+        <img src="" alt="Image" class="game-image" id="quiz-image">
+    </div>
+
+        <!-- Game Control Button -->
+        <div class="controls">
+            <div class="instruction" id="status-text">Is this a JPEG or a PNG?</div>
+            
+        <div class="btn-group">
+            <button class="btn-jpeg" onclick="game.makeGuess('jpeg')">It's a JPEG</button>
+            <button class="btn-png" onclick="game.makeGuess('png')">It's a PNG</button>
+        </div>
+        </div>
+        <div id="feedback" class="feedback-panel">  
+    </div>
+        <button onclick="goToMenu()" class="exit-gamebutton">Exit Game</button>
+    </div>
+        <script>
+            // Javascript to start the game
+            function gamestart() {
+    document.getElementById('start-screen').classList.add('hidden');
+    document.getElementById('game-area').classList.remove('hidden');
+    console.log("Game Started!");
+                                }
+            function goToMenu() {
+    document.getElementById('game-area').classList.add('hidden');
+    document.getElementById('start-screen').classList.remove('hidden');
+            }
+
+const imageList = [
+    'image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg',
+    'image6.jpg', 'image7.jpg', 'image8.jpg', 'image9.jpg', 'image10.jpg'
+                    ]
+    let currentRound = 0; // This tracks where we are (starts at 0)
+    function showNextImage() {
+    const myFrame = document.getElementById('quiz-image');
+    if (currentRound < imageList.length) {
+        myFrame.src = imageList[currentRound];
+        // Increase the round number for next time
+        currentRound++; 
+    } else {
+        console.log("Game Over!");
+    }
+}
+        </script>
+</body>
 </html>
