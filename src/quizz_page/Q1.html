@@ -7,15 +7,36 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-        <h1>Gorup 3 Quizzes Game</h1>
-        <nav>
-            <a href="home.html" target="_blank">Home</a>
-        </nav>
-        <p>Welcome to the Quiz Game! where you can test your knowledge and have fun!</p>
-    </header>
-    <main>
 
+        <header>
+          <div class="stat-box">
+            <div class="stat-label">Score</div>
+            <div class="stat-value" id="score">0</div>
+          </div>
+        <div class="stat-box">
+            <div class="stat-label">Round</div>
+            <div class="stat-value"><span id="current-round">1</span>/<span id="total-rounds">10</span></div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">Streak</div>
+            <div class="stat-value" id="streak">0</div>
+        </div>
+      </header>
+    <main>
+        <div id="start-screen" class="screen-overlay">
+            <h1>JPEG vs PNG</h1>
+            <p>Can you identify the image format just by looking?</p>
+            
+            <div class="tip-box">
+                <strong>💡 How to Play:</strong><br>
+                • Look at the background grid behind the image.<br>
+                • If you see the <strong>checkerboard</strong> through the image, it has transparency (PNG).<br>
+                • If the image has a <strong>solid background</strong> hiding the grid, it's likely a JPEG.<br>
+                • Also look for compression "noise" (JPEG) vs clean edges (PNG).
+            </div>
+
+            <button class="btn-start" onclick="game.start()">Start Quiz</button>
+        </div>
     </main>
     <footer>
         <p>&copy; 2026 Quiz Game. Group 3. INFO 250. All rights reserved.</p>
