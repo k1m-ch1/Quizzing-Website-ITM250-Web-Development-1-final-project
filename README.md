@@ -63,6 +63,6 @@ and fieldsets
 - [] `png` vs `jpg`: a quiz to test whether we can see the difference between the lossless `png` image compression format vs the `jpg` image compression format. We may also include the `heic` and use different compression ratios
 - [] Guess the flag quiz
 - [] Real vs AI quiz
-
+- [] figure skating jumps
 
 
