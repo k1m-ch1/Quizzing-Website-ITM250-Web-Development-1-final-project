@@ -1,0 +1,76 @@
+@import "./colors.css";
+
+
+h1 {
+  color: var(--color1);
+}
+
+/*
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 20px 20px;
+  margin: 0 0;
+  text-align: center;
+
+}
+
+.header_sticky {
+  position: sticky;
+  top: 0;
+  background-color: lightgrey;
+  color: black;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.footer_sticky {
+  position: sticky;
+  bottom: 0;
+  background-color: lightgrey;
+  color: black;
+  padding: 10px;
+  text-align: left;
+  font-style: italic;
+}
+
+.header_sticky nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.header_sticky nav a:hover {
+  text-decoration: underline;
+  color: lightseagreen;
+}
+
+.quiz_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.quiz_card {
+  background-color: lightskyblue;
+  border: 1px solid lightslategray;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: black;
+
+}
+
+.quiz_card:hover {
+  background-color: rgb(230, 193, 113);
+  color: rgb(0, 4, 255);
+  border-color: lightblue;
+}
+*/
