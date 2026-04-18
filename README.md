@@ -2,6 +2,10 @@
 
 simple quizzing website
 
+# Reference
+
+- [palette generator](https://www.hover.dev/css-color-palette-generator) using the "Unreal Engine-ish" preset
+
 # Notes
 
 - I've stored the assets [here](https://quiz.k1mch1.space)

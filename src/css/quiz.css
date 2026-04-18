@@ -1,32 +1,5 @@
 @import "./colors.css";
 
-.quiz-body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background: var(--color17);
-  color: var(--color16);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.quiz-header {
-  background: var(--color18);
-  padding: 0.9rem 2rem;
-}
-
-.quiz-header nav a {
-  color: var(--color17);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.03em;
-}
-
-.quiz-header nav a:hover {
-  text-decoration: underline;
-  color: var(--color19);
-}
-
 .quiz-main {
   flex: 1;
   padding: 2rem 1rem;
@@ -35,23 +8,10 @@
 .quiz-main>h1 {
   text-align: center;
   font-size: 2rem;
-  color: var(--color18);
+  color: var(--copy);
   margin-bottom: 0.3rem;
   letter-spacing: 0.02em;
 }
-
-.quiz-footer {
-  background: var(--color18);
-  color: var(--color17);
-  text-align: left;
-  padding: 0.75rem;
-  font-size: 0.82rem;
-  font-style: italic;
-  position: sticky;
-  bottom: 0;
-}
-
-/* Quiz card */
 
 .quiz-page {
   display: none;
@@ -62,12 +22,11 @@
   margin: 1.8rem auto 0;
   padding: 2rem 2.2rem;
   border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 4px 18px rgba(30, 64, 175, 0.1);
+  background: var(--background);
 }
 
 .quiz-page h2 {
-  color: var(--color18);
+  color: var(--copy);
   margin-bottom: 1rem;
   font-size: 1.4rem;
 }
@@ -112,10 +71,12 @@
   transition: background 0.15s, border-color 0.15s;
 }
 
+/*
 .quiz-page label:hover {
-  background: #eff6ff;
+  background: ;
   border-color: #93c5fd;
 }
+*/
 
 /* Feedback */
 
@@ -131,8 +92,8 @@
 .btn {
   display: inline-block;
   padding: 0.6rem 1.5rem;
-  background: var(--color20);
-  color: #fff;
+  background: var(--secondary-light);
+  color: var(--secondary-content);
   border: none;
   border-radius: 7px;
   cursor: pointer;
@@ -144,7 +105,7 @@
 }
 
 .btn:hover {
-  background: var(--color18);
+  background: var(--secondary);
   transform: translateY(-1px);
 }
 
@@ -169,7 +130,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #fff;
-  background: var(--color20);
+  background: var(--primary);
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
   margin-bottom: 1.2rem;
@@ -183,18 +144,18 @@
 
 #result h2 {
   font-size: 2rem;
-  color: var(--color18);
+  color: var(--copy);
   margin-bottom: 0.6rem;
 }
 
 #result p {
   margin-bottom: 1rem;
   font-size: 1.05rem;
-  color: var(--color16);
+  color: var(--copy);
 }
 
 #result strong {
-  color: var(--color18);
+  color: var(--copy);
   font-size: 1.2rem;
 }
 
