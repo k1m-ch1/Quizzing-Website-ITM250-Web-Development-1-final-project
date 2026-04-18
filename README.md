@@ -47,6 +47,10 @@ and fieldsets
 
 # TODO
 
+## Fixes
+
+- [] fix the templating issue without using hardlinks (because `git` doesn't preserve hardlinks)
+
 ## General stuff
 
 - [] format the `html` page with proper semantic elements
