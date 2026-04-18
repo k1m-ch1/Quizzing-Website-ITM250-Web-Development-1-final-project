@@ -2,6 +2,35 @@
 
 Simple quizzing website
 
+# Creating new quizzes
+
+We can quickly create new quizzes like the examples in `/quizzes/guess-the-flag.html` and `/real-vs-ai.html`.
+
+We expect that the quiz follows the following format:
+
+ - We always assume that the first element is an `h1` tag
+ - We always assume that the first section contains `quiz-info`, and will not be modified
+ - The next few sections will all be quiz questions
+ - They will all be multiple choice with one answer (radio button) with the correct answer being at the top.
+ - We will shuffle at load-time.
+
+To turn that quiz into a page, go into `/quiz-pages`. If you've created a `my-quiz.html`, just do (while in `/quiz-pages`):
+
+```
+mkdir my-quiz
+```
+
+then do a hardlink from `template.html` to `./my-quiz/index.html`
+
+```
+ln ./template.html ./my-quiz/index.html
+```
+
+Done.
+
+> [!NOTE]
+> you can add whatever HTML elements you want in the section, just ensure that there's a `fieldset` with `input` elements for multiple choice
+
 # Inspiration
 
 - [NPR's audio quality test](https://www.npr.org/sections/therecord/2015/06/02/411473508/how-well-can-you-hear-audio-quality)
