@@ -11,7 +11,9 @@ function checkAnswer(questionName, feedbackId){
     feedback.textContent = 'Please select an answer first.';
     return;
   }
+
   answeredQuestions++;
+
 
   if (selected.value === "true"){
     correctAnswers++;
@@ -31,9 +33,10 @@ function checkAnswer(questionName, feedbackId){
     input.disabled = true;
   });
 
+  // also disable the submit button (a bit scuff)
+  selected.closest("label").parentElement.parentElement.querySelector('button').disabled = true;
+
   // show the result if all questions have been answered
-  console.log("Answered question: ", answeredQuestions);
-  console.log("Total question: ", totalQuestions);
   if (answeredQuestions === totalQuestions){
     const quizResultSection = `
     <section class="quiz-card quiz-result">
@@ -43,6 +46,7 @@ function checkAnswer(questionName, feedbackId){
         <a href="/index.html">Home</a>
     </section>
     `
+
     document.querySelector('.quiz-main').innerHTML += quizResultSection;
   }
 }

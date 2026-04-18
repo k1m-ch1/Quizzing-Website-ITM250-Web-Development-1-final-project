@@ -20,11 +20,11 @@ Simple quizzing website
 ## HTML Structure & Content
 
 - [] Create a multi-page website with a minimum of 4 pages (e.g., Home, About, Contact, Core Content)
-- [] Use proper HTML5 document structure `(<!DOCTYPE html>,
+- [x] Use proper HTML5 document structure `(<!DOCTYPE html>,
 < []html>, <head>, <body>)`
-- [] Apply semantic HTML elements `(<header>, <nav>, <main>, <section>, <article>, <footer>)`
+- [x] Apply semantic HTML elements `(<header>, <nav>, <main>, <section>, <article>, <footer>)`
 - [] Include headings, paragraphs, lists (ordered and/or unordered), and hyperlinks for navigation
-- [] Embed at least one image and one multimedia element (audio or video)
+- [x] Embed at least one image and one multimedia element (audio or video)
 - [] Include at least one table used appropriately for tabular data
 - [] Include at least one form with appropriate input types, labels,
 and fieldsets 
@@ -50,6 +50,7 @@ and fieldsets
 ## Fixes
 
 - [] fix the templating issue without using hardlinks (because `git` doesn't preserve hardlinks)
+- [] css styling
 
 ## General stuff
 
