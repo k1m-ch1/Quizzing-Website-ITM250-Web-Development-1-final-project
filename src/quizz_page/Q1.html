@@ -33,7 +33,7 @@
                 • If the image has a <strong>solid background</strong> hiding the grid, it's likely a JPEG.<br>
                 • Also look for compression "noise" (JPEG) vs clean edges (PNG).
             </div>
-            <button class="btn-start" onclick="gamestart()">Start Quiz</button>
+            <button class="btn-start" onclick="game.start()">Start Quiz</button>
             <!-- The Quiz Area -->
     </div>
     <div id="game-area" class="box hidden">
@@ -57,35 +57,8 @@
         </div>
         <div id="feedback" class="feedback-panel">  
     </div>
-        <button onclick="goToMenu()" class="exit-gamebutton">Exit Game</button>
+        <button onclick="game.goToMenu()" class="exit-gamebutton">Exit Game</button>
     </div>
-        <script>
-            // Javascript to start the game
-            function gamestart() {
-    document.getElementById('start-screen').classList.add('hidden');
-    document.getElementById('game-area').classList.remove('hidden');
-    console.log("Game Started!");
-                                }
-            function goToMenu() {
-    document.getElementById('game-area').classList.add('hidden');
-    document.getElementById('start-screen').classList.remove('hidden');
-            }
-
-const imageList = [
-    'image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg',
-    'image6.jpg', 'image7.jpg', 'image8.jpg', 'image9.jpg', 'image10.jpg'
-                    ]
-    let currentRound = 0; // This tracks where we are (starts at 0)
-    function showNextImage() {
-    const myFrame = document.getElementById('quiz-image');
-    if (currentRound < imageList.length) {
-        myFrame.src = imageList[currentRound];
-        // Increase the round number for next time
-        currentRound++; 
-    } else {
-        console.log("Game Over!");
-    }
-}
-        </script>
+<script src="q1.js"></script>
 </body>
 </html>
