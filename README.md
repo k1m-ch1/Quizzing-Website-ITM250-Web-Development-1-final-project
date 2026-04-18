@@ -1,10 +1,15 @@
 # Quizzing-Website-ITM250-Web-Development-1-final-project
 
-simple quizzing website
+Simple quizzing website
 
-# Reference
+# Inspiration
 
-- [palette generator](https://www.hover.dev/css-color-palette-generator) using the "Unreal Engine-ish" preset
+- [NPR's audio quality test](https://www.npr.org/sections/therecord/2015/06/02/411473508/how-well-can-you-hear-audio-quality)
+- [Website design](https://codepip.com/)
+
+# Sources
+
+- [color palette generator](https://www.hover.dev/css-color-palette-generator) using the "Unreal Engine-ish" preset
 
 # Notes
 

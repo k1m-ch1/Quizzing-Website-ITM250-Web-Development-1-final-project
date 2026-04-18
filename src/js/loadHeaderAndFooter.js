@@ -1,4 +1,4 @@
 // need to dynamically load footer
 
-loadTag('footer');
-loadTag('nav');
+injectContent('/nav.html', 'nav');
+injectContent('/footer.html', 'footer');
