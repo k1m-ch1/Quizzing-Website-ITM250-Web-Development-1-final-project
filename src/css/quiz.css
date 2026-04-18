@@ -85,7 +85,7 @@
 
 /* Buttons */
 
-.btn {
+button.question-submit {
   display: inline-block;
   padding: 0.6rem 1.5rem;
   background: var(--secondary-light);
@@ -100,12 +100,12 @@
   transition: background 0.15s, transform 0.1s;
 }
 
-.btn:hover {
+button.question-submit:hover {
   background: var(--secondary);
   transform: translateY(-1px);
 }
 
-.btn:active {
+button.question-submit:active {
   transform: translateY(0);
 }
 
@@ -125,11 +125,21 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--primary-content);
   background: var(--primary);
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
   margin-bottom: 1.2rem;
+}
+
+.success {
+  color: var(--success-content);
+  background: var(--success);
+}
+
+.error {
+  color: var(--error-content);
+  background: var(--error);
 }
 
 /* Result page */
