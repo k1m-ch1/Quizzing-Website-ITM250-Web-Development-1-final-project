@@ -1,6 +1,9 @@
 @import "colors.css";
 
+/*universal styling for every single page*/
+
 body {
+  /*TODO: use better fonts (a 'sans-serif' type font might make this site look a bit more modern)*/
   font-family: Georgia, 'Times New Roman', Times, serif;
   background: var(--background);
   color: var(--copy);
