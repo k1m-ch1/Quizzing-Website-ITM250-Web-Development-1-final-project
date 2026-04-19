@@ -108,4 +108,10 @@ and fieldsets
 - [] Real vs AI quiz
 - [] figure skating jumps
 
+# Notes
 
+To use `ffmpeg` in batch:
+
+```
+ls ./png/|xargs -I {} basename {} png | xargs -I {} ffmpeg -i ./png/{}png ./jpg/{}jpg
+```

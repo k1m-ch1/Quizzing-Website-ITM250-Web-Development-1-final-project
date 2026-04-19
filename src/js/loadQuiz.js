@@ -37,6 +37,7 @@ async function prepareQuiz(path, selector){
   document.querySelector('title').textContent = quizHeading.textContent;
   let quizInfo = quizChildren.shift();
   quizInfo.className = "quiz-card quiz-info";
+  quizInfo.innerHTML += `<p id="loading-progress"></p>`
   let quizQuestions = quizChildren;
   
   quizQuestions.forEach((questionSection, i) => {
@@ -73,11 +74,43 @@ async function prepareQuiz(path, selector){
   //console.log(quizQuestions);
   let quizQuestionsAsText = quizQuestions.map((section, i) => {
     const progressText = `<p class="progress">Question ${i+1} of ${quizQuestions.length}</p>`;
-    return progressText + section.outerHTML;
+    section.innerHTML = progressText + section.innerHTML;
+    return section.outerHTML;
   })
   .join("");
 
   quizMain.innerHTML = quizHeading.outerHTML + quizInfo.outerHTML + quizQuestionsAsText;
 }
 
-prepareQuiz(`/quizzes/${getQuizName()}.html`, ".quiz-main");
+
+function hideImagesUntilLoaded(){
+  const images = document.querySelectorAll("img");
+  let loadedImageNum = [...images].filter(img => img.complete).length;
+  if (loadedImageNum === images.length) {
+    images.forEach(loadedImage => {
+      loadedImage.style.visibility = 'visible';
+    })
+  }
+  else{
+    document.getElementById("loading-progress").textContent = "All images will show up all at once, once they're all loaded..."
+    images.forEach(img => {
+      img.style.visibility = 'hidden';
+      img.onload = () => {
+        loadedImageNum++;
+        document.getElementById("loading-progress").textContent = `${loadedImageNum}/${images.length} images loaded`;
+        if (loadedImageNum === images.length) {
+          document.getElementById("loading-progress").textContent = '';
+          images.forEach(loadedImage => {
+            loadedImage.style.visibility = 'visible';
+          })
+        }
+      }
+    })
+  }
+}
+
+prepareQuiz(`/quizzes/${getQuizName()}.html`, ".quiz-main").then(() =>{
+  if (document.querySelector("img") != null){
+    hideImagesUntilLoaded();
+  }
+})
