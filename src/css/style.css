@@ -38,3 +38,30 @@ footer {
   font-size: 0.82rem;
   font-style: italic;
 }
+
+.left-container {
+  margin: 0;
+  padding: 0;
+  gap: 5rem;
+}
+.right-container {
+  gap: 5rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: var(--card-bg);
+  padding: 15px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
