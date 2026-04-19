@@ -1,4 +1,6 @@
 // need to dynamically load footer
 
-injectContent('/nav.html', 'nav');
-injectContent('/footer.html', 'footer');
+const pathPrefix = window.location.pathname.startsWith('/src/') ? '/src' : '';
+
+injectContent(`${pathPrefix}/nav.html`, 'nav');
+injectContent(`${pathPrefix}/footer.html`, 'footer');
