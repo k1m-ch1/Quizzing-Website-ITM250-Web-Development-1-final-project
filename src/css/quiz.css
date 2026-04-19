@@ -170,3 +170,7 @@ button.question-submit:active {
 .result button {
   margin: 0.3rem 0.3rem 0;
 }
+
+video {
+  width: 100%;
+}

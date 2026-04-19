@@ -58,12 +58,12 @@ Done.
 
 - [x] Create a multi-page website with a minimum of 4 pages (e.g., Home, About, Contact, Core Content)
 - [x] Use proper HTML5 document structure `(<!DOCTYPE html>,
-< []html>, <head>, <body>)`
+`<html>, <head>, <body>)`
 - [x] Apply semantic HTML elements `(<header>, <nav>, <main>, <section>, <article>, <footer>)`
 - [x] Include headings, paragraphs, lists (ordered and/or unordered), and hyperlinks for navigation
 - [x] Embed at least one image and one multimedia element (audio or video)
 - [x] Include at least one table used appropriately for tabular data
-- [] Include at least one form with appropriate input types, labels,
+- [x] Include at least one form with appropriate input types, labels,
 and fieldsets 
 
 ## CSS Styling & Layout
@@ -80,9 +80,11 @@ and fieldsets
 
 - [] Implement at least two CSS media queries to adapt the layout for different screen sizes (e.g., mobile, tablet, desktop)
 - [] Ensure the navigation, images, and layout adjust gracefully across devices
-- [] Use relative units (%, em, rem, vw/vh) where appropriate
+- [x] Use relative units (%, em, rem, vw/vh) where appropriate
 
 # TODO
+
+
 
 ## Fixes
 
@@ -91,6 +93,7 @@ and fieldsets
 
 ## General stuff
 
+- [] fix header theme, responsiveness and add a dark mode
 - [x] format the `html` page with proper semantic elements
 - [x] use external `css` for styling 
 - [] make the site mobile friendly through responsive layouts like `flexbox` and `css`
@@ -107,14 +110,14 @@ and fieldsets
   - [x] figure out that correct format
 ~~  - [] also try to do the bare minimum to prevent easy cheating~~
 - [] Submit a quiz: we'll have a form to allow visitors to submit their quizzes to be hosted on our website
-- [] `mp3` vs `wav`: a quiz to test whether the test taker can hear the difference between the lossy `mp3` audio vs the lossless `wav` audio format. We may also include different lossy audio compression formats such as `m4a`, `opus`, `ogg`, with different bitrates. This quiz demonstrates the usage of audio elements.
-  - [] make sure to include fall back text, make sure to include only non-copyrighted music
+- [x] `mp3` vs `wav`: a quiz to test whether the test taker can hear the difference between the lossy `mp3` audio vs the lossless `wav` audio format. We may also include different lossy audio compression formats such as `m4a`, `opus`, `ogg`, with different bitrates. This quiz demonstrates the usage of audio elements.
+  - [x] make sure to include fall back text, make sure to include only non-copyrighted music
 ~~- [] Guess the song quiz~~
 ~~  - [] just play sections of copyrighted music~~
 - [x] `png` vs `jpg`: a quiz to test whether we can see the difference between the lossless `png` image compression format vs the `jpg` image compression format. We may also include the `heic` and use different compression ratios
 - [x] Guess the flag quiz
 - [x] Real vs AI quiz
-- [] figure skating jumps
+- [x] figure skating jumps
 
 # Notes
 
