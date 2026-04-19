@@ -3,7 +3,7 @@ let correctAnswers = 0;
 let answeredQuestions = 0;
 
 function checkAnswer(questionName, feedbackId){
-  let totalQuestions = document.querySelectorAll(".quiz-question").length;
+  let totalQuestions = document.querySelectorAll(".quiz.question").length;
   let selected = document.querySelector(`input[name="${questionName}"]:checked`);
   let feedback = document.getElementById(feedbackId);
 
@@ -27,19 +27,30 @@ function checkAnswer(questionName, feedbackId){
     correct.closest("label").classList.add("success");
   }
 
-  // disable all radio button after submission
   let possibleAnswers = document.querySelectorAll(`input[name="${questionName}"]`);
   possibleAnswers.forEach(input => {
+    // disable all radio button after submission
     input.disabled = true;
+    // give feedback
+    const feedback = input.getAttribute('feedback');
+    if (feedback != null){
+      const span = document.createElement("span");
+      span.textContent = feedback;
+      input.closest("label").appendChild(span);
+    };
   });
 
+
+
   // also disable the submit button (a bit scuff)
-  selected.closest("label").parentElement.parentElement.querySelector('button').disabled = true;
+  console.log(selected);
+  console.log(selected.closest("label"));
+  selected.parentElement.parentElement.parentElement.querySelector('button').disabled = true;
 
   // show the result if all questions have been answered
   if (answeredQuestions === totalQuestions){
     const quizResultSection = `
-    <section class="quiz-card quiz-result">
+    <section class="quiz result">
         <h2>Quiz Complete!</h2>
         <p>Your score: <strong id="score">${correctAnswers}</strong> / ${totalQuestions}</p>
         <button onclick="location.reload()">Try Again</button>

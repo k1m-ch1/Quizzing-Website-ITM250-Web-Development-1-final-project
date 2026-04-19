@@ -36,12 +36,12 @@ async function prepareQuiz(path, selector){
   let quizHeading = quizChildren.shift();
   document.querySelector('title').textContent = quizHeading.textContent;
   let quizInfo = quizChildren.shift();
-  quizInfo.className = "quiz-card quiz-info";
+  quizInfo.className = "quiz info";
   quizInfo.innerHTML += `<p id="loading-progress"></p>`
   let quizQuestions = quizChildren;
   
   quizQuestions.forEach((questionSection, i) => {
-    questionSection.className = "quiz-card quiz-question";
+    questionSection.className = "quiz question";
 
     // modification of the fieldset (shuffling and more)
     let oldFieldset = questionSection.querySelector('fieldset');
