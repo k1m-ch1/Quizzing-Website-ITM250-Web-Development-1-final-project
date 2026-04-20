@@ -1,88 +1,94 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quiz Game</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/utils.js" defer></script>
-    <script src="./js/loadHeaderAndFooter.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-      </nav>
-    </header>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Quiz Game</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<script src="./js/utils.js" defer></script>
+		<script src="./js/loadHeaderAndFooter.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+			</nav>
+		</header>
 
-    <main>
-      <section id="hero-section">
-        <h1>Welcome to the Quizzing Site</h1>
-        <p>Test your eye for detail and ear for quality with our interactive perception quizzes. From spotting AI-generated art to identifying country flags — how sharp are you?</p>
-        <a href="#quizzes">Browse Quizzes</a>
-      </section>
-      <section id="about">
-        <h2>About</h2>
-        <p>Quiz Game is a collection of perception challenges built to test how well your senses hold up under scrutiny. Each quiz is short, interactive, and designed to test you ability in general knowledge!</p>
-      </section>
-      <section id="quizzes">
-        <h2>Our quizzes</h2>
-        <div class="quiz-grid">
-          <a href="quiz-pages/guess-the-flag" class="quiz-card">
-            <div class="quiz-thumb" aria-hidden="true">🌍</div>
-            <div class="quiz-body">
-              <h3>Guess the Flag</h3>
-              <p>How well do you know the flags of the world? Put your geography knowledge to the test.</p>
-            </div>
-          </a>
+		<main>
+			<section id="hero-section">
+				<h1>Welcome to the Quizzing Site</h1>
+				<p>Test your eye for detail and ear for quality with our interactive perception quizzes. From spotting AI-generated art to identifying country flags — how sharp are you?</p>
+				<a href="#quizzes">Browse Quizzes</a>
+			</section>
+			<section id="about">
+				<h2>About</h2>
+				<p>Quiz Game is a collection of perception challenges built to test how well your senses hold up under scrutiny. Each quiz is short, interactive, and designed to test you ability in general knowledge!</p>
+			</section>
+			<section id="quizzes">
+				<h2>Our quizzes</h2>
+				<div class="quiz-grid">
+					<a href="quiz-pages/guess-the-flag" class="quiz-card">
+						<div class="quiz-thumb" aria-hidden="true">🌍</div>
+						<div class="quiz-body">
+							<h3>Guess the Flag</h3>
+							<p>How well do you know the flags of the world? Put your geography knowledge to the test.</p>
+						</div>
+					</a>
 
-          <a href="quiz-pages/real-vs-ai" class="quiz-card">
-            <div class="quiz-thumb" aria-hidden="true">🎨</div>
-            <div class="quiz-body">
-              <h3>Real vs. AI</h3>
-              <p>Human art or machine-generated? See if you can tell the difference.</p>
-            </div>
-          </a>
+					<a href="quiz-pages/real-vs-ai" class="quiz-card">
+						<div class="quiz-thumb" aria-hidden="true">🎨</div>
+						<div class="quiz-body">
+							<h3>Real vs. AI</h3>
+							<p>Human art or machine-generated? See if you can tell the difference.</p>
+						</div>
+					</a>
 
-          <a href="quiz-pages/png-vs-jpg" class="quiz-card">
-            <div class="quiz-thumb" aria-hidden="true">🖼️</div>
-            <div class="quiz-body">
-              <h3>PNG vs. JPG</h3>
-              <p>See whether you can tell the difference between the images encoded with the PNG and JPG file format</p>
-            </div>
-          </a>
+					<a href="quiz-pages/png-vs-jpg" class="quiz-card">
+						<div class="quiz-thumb" aria-hidden="true">🖼️</div>
+						<div class="quiz-body">
+							<h3>PNG vs. JPG</h3>
+							<p>See whether you can tell the difference between the images encoded with the PNG and JPG file format</p>
+						</div>
+					</a>
 
-          <a href="quiz-pages/audio-file-quiz" class="quiz-card">
-            <div class="quiz-thumb" aria-hidden="true">🎧</div>
-            <div class="quiz-body">
-              <h3>Audio File Quiz</h3>
-              <p>See whether you can hear the difference between different audio files of different encoding.</p>
-            </div>
-          </a>
+					<a href="quiz-pages/audio-file-quiz" class="quiz-card">
+						<div class="quiz-thumb" aria-hidden="true">🎧</div>
+						<div class="quiz-body">
+							<h3>Audio File Quiz</h3>
+							<p>See whether you can hear the difference between different audio files of different encoding.</p>
+						</div>
+					</a>
 
-          <a href="quiz-pages/figure-skating-jumps" class="quiz-card">
-            <div class="quiz-thumb" aria-hidden="true">⛸️</div>
-            <div class="quiz-body">
-              <h3>Figure Skating Jumps</h3>
-              <p>Test your knowledge of figure skating jumps.</p>
-            </div>
-          </a>
-
-        </div>
-      </section>
-      <section id="make-a-quiz">
-        <h2>Want to feature a quiz on our site?</h2>
-        <!--TODO: elaborate-->
-        <p>We welcome community-submitted quizzes. Quizzes follow a simple HTML format — each question is a <code>&lt;section&gt;</code> with a <code>&lt;fieldset&gt;</code> for the choices, and the correct answer always goes first (we shuffle at load time so players won't notice).</p>
-        <p>To submit a quiz, reach out to us with your quiz file. We'll review it and add it to the site.</p>
-        <h3>Format at a glance</h3>
-        <ol>
-          <li>An <code>&lt;h1&gt;</code> for the quiz title</li>
-          <li>A <code>&lt;section&gt;</code> for instructions / quiz info</li>
-          <li>One <code>&lt;section&gt;</code> per question, each containing a <code>&lt;fieldset&gt;</code> with radio <code>&lt;input&gt;</code> options — correct answer listed first</li>
-        </ol>
-      </section>
-    </main>
-    <footer>
-    </footer>
-  </body>
+					<a href="quiz-pages/figure-skating-jumps" class="quiz-card">
+						<div class="quiz-thumb" aria-hidden="true">⛸️</div>
+						<div class="quiz-body">
+							<h3>Figure Skating Jumps</h3>
+							<p>Test your knowledge of figure skating jumps.</p>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section id="make-a-quiz">
+				<h2>Want to feature a quiz on our site?</h2>
+				<!--TODO: elaborate-->
+				<p>We welcome community-submitted quizzes. Quizzes follow a simple HTML format — each question is a <code>&lt;section&gt;</code>
+					with a <code>&lt;fieldset&gt;</code>
+					for the choices, and the correct answer always goes first (we shuffle at load time so players won't notice).</p>
+				<p>To submit a quiz, reach out to us with your quiz file. We'll review it and add it to the site.</p>
+				<h3>Format at a glance</h3>
+				<ol>
+					<li>An <code>&lt;h1&gt;</code>
+						for the quiz title</li>
+					<li>A <code>&lt;section&gt;</code>
+						for instructions / quiz info</li>
+					<li>One <code>&lt;section&gt;</code>
+						per question, each containing a <code>&lt;fieldset&gt;</code>
+						with radio <code>&lt;input&gt;</code>
+						options — correct answer listed first</li>
+				</ol>
+			</section>
+		</main>
+		<footer>
+		</footer>
+	</body>
 </html>

@@ -13,24 +13,6 @@ body {
   flex-direction: column;
 }
 
-header {
-  background: var(--primary-light);
-  padding: 0.9rem 2rem;
-}
-
-header nav a {
-  color: var(--primary-content);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.03em;
-}
-
-header nav a:hover {
-  text-decoration: underline;
-  color: var(--primary-content);
-}
-
 footer {
   background: var(--primary-light);
   color: var(--primary-content);
@@ -38,30 +20,6 @@ footer {
   padding: 0.75rem;
   font-size: 0.82rem;
   font-style: italic;
-}
-
-.left-container {
-  margin: 0;
-  padding: 0;
-  gap: 5rem;
-}
-
-.right-container {
-  gap: 5rem;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  position: sticky;
-  background-color: var(--card-bg);
-  padding: 15px 30px;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 1000px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-
 }
 
 a:hover {
@@ -89,7 +47,7 @@ main>section:not(#hero-section) {
 
 #hero-section h1 {
   font-size: 5rem;
-  color: var(--foreground);
+  color: #fff;
   margin: 0;
   letter-spacing: 0.01rem;
   line-height: 1.15;
@@ -99,7 +57,7 @@ main>section:not(#hero-section) {
 
 #hero-section p {
   font-size: 1.2rem;
-  color: var(--foreground);
+  color: #fff;
   margin-top: 4rem;
   max-width: 580px;
   margin: 1.2rem;
@@ -112,7 +70,7 @@ main>section:not(#hero-section) {
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.75rem 2rem;
-  background: var(--foreground);
+  background: var(--primary-content);
   color: var(--primary-dark);
   font-weight: 700;
   font-size: 0.95rem;
@@ -130,12 +88,12 @@ main>section:not(#hero-section) {
 }
 
 #about {
-  color: var(--primary-content);
+  color: var(--copy);
   font-size: 2rem;
 }
 
 #quizzes {
-  color: var(--primary-content);
+  color: var(--copy);
   font-size: 2rem;
 
 }
@@ -209,7 +167,7 @@ a.quiz-card:hover {
 }
 
 #make-a-quiz {
-  color: var(--primary-content);
+  color: var(--copy);
   font-size: 2rem;
 
   & h2 {

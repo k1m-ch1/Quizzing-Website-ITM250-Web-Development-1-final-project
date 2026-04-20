@@ -1,5 +1,24 @@
 @import "colors.css";
 
+header {
+  background: var(--primary-light);
+  padding: 0.9rem 2rem;
+}
+
+header nav a {
+  color: var(--primary-content);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0px 1em;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  color: var(--primary-content);
+}
+
 .left-container {
   margin: 0;
   padding: 0;
@@ -13,8 +32,9 @@
 nav {
   display: flex;
   justify-content: space-between;
-}
-
-a {
-  text-decoration: none;
+  background-color: var(--card-bg);
+  padding: 15px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
