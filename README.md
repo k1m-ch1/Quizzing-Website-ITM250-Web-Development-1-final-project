@@ -4,7 +4,7 @@ Simple quizzing website
 
 # Creating new quizzes
 
-We can quickly create new quizzes like the examples in `/quizzes/guess-the-flag.html` and `/real-vs-ai.html`.
+We can quickly create new quizzes like the examples in `/quizzes/guess-the-flag.html` and `/quizzes/real-vs-ai.html`.
 
 We expect that the quiz follows the following format:
 
@@ -13,6 +13,52 @@ We expect that the quiz follows the following format:
  - The next few sections will all be quiz questions
  - They will all be multiple choice with one answer (radio button) with the correct answer being at the top.
  - We will shuffle at load-time.
+
+Example:
+
+```html
+<h1>Guess the Flag Quiz</h1>
+
+<section>
+  <h2>How to Play</h2>
+  <ul>
+    <li>There are <strong>20 flag questions</strong>.</li>
+    <li>Each question shows one flag — pick the country it belongs to.</li>
+    <li>You must answer <strong>correctly</strong> to move to the next flag.</li>
+    <li>A wrong answer ends the quiz and shows your score.</li>
+    <li>Finish all 20 correctly for a perfect score!</li>
+  </ul>
+</section>
+
+<section>
+  <figure>
+    <img src="https://quiz.k1mch1.space/assets/flags/flag1.svg" alt="Flag 1">
+  </figure>
+  <fieldset>
+    <legend>Which country does this flag belong to?</legend>
+    <!--Just in case I forget the format: <label><input type="radio" name="q" value="correct">Italy</label>--> 
+    <label><input>Italy</label>
+    <label><input>France</label>
+    <label><input>Netherlands</label>
+    <label><input>Russia</label>
+  </fieldset>
+</section>
+
+<section>
+  <figure>
+    <img src="https://quiz.k1mch1.space/assets/flags/flag2.svg" alt="Flag 2">
+  </figure>
+  <fieldset>
+    <legend>Which country does this flag belong to?</legend>
+    <label><input>North Korea</label>
+    <label><input>Japan</label>
+    <label><input>South Korea</label>
+    <label><input>China</label>
+  </fieldset>
+</section>
+
+<!-- etc... As long as the fieldset is there, you can add picturs, videos, embedded videos, tables, iframes,...-->
+```
 
 To turn that quiz into a page, go into `/quiz-pages`. If you've created a `my-quiz.html`, just do (while in `/quiz-pages`):
 
@@ -81,7 +127,7 @@ and fieldsets
 ## Responsive Design
 
 - [x] Implement at least two CSS media queries to adapt the layout for different screen sizes (e.g., mobile, tablet, desktop)
-- [] Ensure the navigation, images, and layout adjust gracefully across devices
+- [x] Ensure the navigation, images, and layout adjust gracefully across devices
 - [x] Use relative units (%, em, rem, vw/vh) where appropriate
 
 # TODO
@@ -92,16 +138,16 @@ and fieldsets
 
 ~~- [] fix the templating issue without using hardlinks (because `git` doesn't preserve hardlinks)~~
 ~~- [] css styling~~
-- [] style table
+- [x] style table
 - [x] responsive layout
   - [x] adjust header for different screens
   - [x] adjust grid for different screens
-  - [] adjust hero-section for different screens
+  - [x] adjust hero-section for different screens
 - [x] dark mode / light mode
 
 ## General stuff
 
-- [] fix header theme, responsiveness and add a dark mode
+- [x] fix header theme, responsiveness and add a dark mode
 - [x] format the `html` page with proper semantic elements
 - [x] use external `css` for styling 
 - [x] make the site mobile friendly through responsive layouts like `flexbox` and `css`
