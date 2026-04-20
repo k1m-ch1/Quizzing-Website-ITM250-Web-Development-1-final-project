@@ -46,6 +46,8 @@ Done.
 - [opencode](https://opencode.ai/) to organize assets such as simplifying filenames and enumerating files and also generating tables for file format comparison
 - [ffmpeg](https://ffmpeg.org/) to reformat files across different formats
 - [chatgpt](https://chatgpt.com) used to ask for syntax and general best practices
+- [google's gemini](https://gemini.google.com) used to generate AI images for quiz (Real vs. AI)
+- [github copilot](https://github.com/copilot) used for code debugging and troubleshooting (mainly for JS)
 
 
 # Notes
