@@ -1,11 +1,12 @@
 @import "colors.css";
 @import "nav.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*universal styling for every single page*/
 
 body {
   /*TODO: use better fonts (a 'sans-serif' type font might make this site look a bit more modern)*/
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Noto Sans', sans-serif;
   background: var(--background);
   color: var(--copy);
   display: flex;
@@ -29,7 +30,7 @@ a:hover {
 }
 
 main>section:not(#hero-section) {
-  padding: 3rem 4rem;
+  padding: 1.2rem 4rem;
 }
 
 #hero-section {
@@ -90,14 +91,49 @@ main>section:not(#hero-section) {
 #about {
   color: var(--copy);
   font-size: 2rem;
+
+  & p {
+    font-size: 1.5rem;
+    color: var(--copy-light);
+    line-height: 1.6;
+  }
 }
 
 #quizzes {
   color: var(--copy);
   font-size: 2rem;
 
+  & p {
+    font-size: 1.5rem;
+    color: var(--copy-light);
+    line-height: 1.6;
+  }
 }
 
+#contact {
+  color: var(--copy);
+  font-size: 2rem;
+
+  & p {
+    font-size: 1.5rem;
+    color: var(--copy-light);
+    line-height: 1.6;
+  }
+
+  & a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  & a:hover {
+    color: var(--primary-dark);
+  }
+
+  & a:visited {
+    color: var(--primary-light);
+  }
+}
 
 
 .quiz-grid {
