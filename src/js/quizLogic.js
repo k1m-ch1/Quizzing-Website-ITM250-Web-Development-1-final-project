@@ -59,5 +59,7 @@ function checkAnswer(questionName, feedbackId){
     `
 
     document.querySelector('.quiz-main').innerHTML += quizResultSection;
+    const card = document.querySelector('.quiz.result');
+    card.scrollIntoView({behavior: 'smooth', block: 'center'});
   }
 }

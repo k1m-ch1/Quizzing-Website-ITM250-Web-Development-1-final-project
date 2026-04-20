@@ -148,6 +148,12 @@ button.question-submit:active {
 
 .result {
   text-align: center;
+  background: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  max-width: 480px;
+  margin-bottom: 2rem;
 }
 
 .result h2 {
@@ -163,12 +169,30 @@ button.question-submit:active {
 }
 
 .result strong {
-  color: var(--copy);
+  color: var(--primary);
   font-size: 1.2rem;
 }
 
-.result button {
+.result button,
+.result a {
+  display: inline-block;
   margin: 0.3rem 0.3rem 0;
+  background: var(--primary-light);
+  color: var(--primary-content);
+  border: none;
+  border-radius: 7px;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s, transform 0.1s;
+
+  &:hover {
+    background: var(--primary);
+    transform: translateY(-1px);
+  }
 }
 
 video {
