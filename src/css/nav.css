@@ -1,0 +1,20 @@
+@import "colors.css";
+
+.left-container {
+  margin: 0;
+  padding: 0;
+  gap: 5rem;
+}
+
+.right-container {
+  gap: 5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}

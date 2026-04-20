@@ -64,7 +64,7 @@ Done.
 - [x] Embed at least one image and one multimedia element (audio or video)
 - [x] Include at least one table used appropriately for tabular data
 - [x] Include at least one form with appropriate input types, labels,
-and fieldsets 
+and fieldsets
 
 ## CSS Styling & Layout
 
@@ -90,6 +90,12 @@ and fieldsets
 
 - [] fix the templating issue without using hardlinks (because `git` doesn't preserve hardlinks)
 - [] css styling
+- [] style table
+- [] responsive layout
+  - [] adjust header for different screens
+  - [] adjust grid for different screens
+  - [] adjust hero-section for different screens
+- [] dark mode / light mode
 
 ## General stuff
 
