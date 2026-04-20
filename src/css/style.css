@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "colors.css";
 @import "nav.css";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*universal styling for every single page*/
 
@@ -31,6 +31,10 @@ a:hover {
 
 main>section:not(#hero-section) {
   padding: 1.2rem 4rem;
+
+  @media screen and (max-width: 500px) {
+    padding: 3rem 1rem;
+  }
 }
 
 #hero-section {

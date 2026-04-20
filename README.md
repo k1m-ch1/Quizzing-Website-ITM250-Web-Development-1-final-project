@@ -76,7 +76,7 @@ and fieldsets
 - [x] Use the CSS box model (margin, padding, border) effectively
 - [x] Implement page layout using Flexbox and/or CSS Grid
 - [x] Style links with hover, visited, and active states
-- [] Style the table and form elements for a polished look
+- [x] Style the table and form elements for a polished look
 
 ## Responsive Design
 
