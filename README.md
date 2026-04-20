@@ -71,16 +71,16 @@ and fieldsets
 ## CSS Styling & Layout
 
 - [x] Use an external CSS stylesheet linked to all pages
-- [] Apply consistent typography (font families, sizes, weights, line-height, letter-spacing)
+- [x] Apply consistent typography (font families, sizes, weights, line-height, letter-spacing)
 - [x] Style colors, backgrounds, and borders (for buttons)
 - [x] Use the CSS box model (margin, padding, border) effectively
-- [] Implement page layout using Flexbox and/or CSS Grid
+- [x] Implement page layout using Flexbox and/or CSS Grid
 - [x] Style links with hover, visited, and active states
 - [] Style the table and form elements for a polished look
 
 ## Responsive Design
 
-- [] Implement at least two CSS media queries to adapt the layout for different screen sizes (e.g., mobile, tablet, desktop)
+- [x] Implement at least two CSS media queries to adapt the layout for different screen sizes (e.g., mobile, tablet, desktop)
 - [] Ensure the navigation, images, and layout adjust gracefully across devices
 - [x] Use relative units (%, em, rem, vw/vh) where appropriate
 
@@ -90,34 +90,34 @@ and fieldsets
 
 ## Fixes
 
-- [] fix the templating issue without using hardlinks (because `git` doesn't preserve hardlinks)
-- [] css styling
+~~- [] fix the templating issue without using hardlinks (because `git` doesn't preserve hardlinks)~~
+~~- [] css styling~~
 - [] style table
-- [] responsive layout
-  - [] adjust header for different screens
-  - [] adjust grid for different screens
+- [x] responsive layout
+  - [x] adjust header for different screens
+  - [x] adjust grid for different screens
   - [] adjust hero-section for different screens
-- [] dark mode / light mode
+- [x] dark mode / light mode
 
 ## General stuff
 
 - [] fix header theme, responsiveness and add a dark mode
 - [x] format the `html` page with proper semantic elements
 - [x] use external `css` for styling 
-- [] make the site mobile friendly through responsive layouts like `flexbox` and `css`
-- [] use fonts using Google Fonts
+- [x] make the site mobile friendly through responsive layouts like `flexbox` and `css`
+~~- [] use fonts using Google Fonts~~
 - [x] include tables in the quizzes
 - [x] include images and multimedia elements in the quizzes
-- [] include forms to report issues, and to submit quizzes will be used
+- [x] include forms to report issues, and to submit quizzes will be used
 - [x] include proper `css` styling will be used to make the site easy to use
 
 ## Pages
 
 - [x] Home: there will be a hero section, a short description, and a list of quizzes available
-- [] Documentation: contains the correct `html` format for quiz creation, such that it's easy and repeatable to create new quizzes (We'll simply inject that `html` into the body of a simple template page we define for now).
+- [x] Documentation: contains the correct `html` format for quiz creation, such that it's easy and repeatable to create new quizzes (We'll simply inject that `html` into the body of a simple template page we define for now).
   - [x] figure out that correct format
 ~~  - [] also try to do the bare minimum to prevent easy cheating~~
-- [] Submit a quiz: we'll have a form to allow visitors to submit their quizzes to be hosted on our website
+- [x] Submit a quiz: we'll have a form to allow visitors to submit their quizzes to be hosted on our website
 - [x] `mp3` vs `wav`: a quiz to test whether the test taker can hear the difference between the lossy `mp3` audio vs the lossless `wav` audio format. We may also include different lossy audio compression formats such as `m4a`, `opus`, `ogg`, with different bitrates. This quiz demonstrates the usage of audio elements.
   - [x] make sure to include fall back text, make sure to include only non-copyrighted music
 ~~- [] Guess the song quiz~~

@@ -9,7 +9,6 @@ header nav a {
   color: var(--primary-content);
   text-decoration: none;
   font-weight: 600;
-  padding: 0px 1em;
   font-size: 0.95rem;
   letter-spacing: 0.03em;
 }
@@ -19,19 +18,52 @@ header nav a:hover {
   color: var(--primary-content);
 }
 
-.left-container {
-  margin: 0;
+nav>ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
   padding: 0;
-  gap: 5rem;
+
+  li {
+    padding: 15px 20px;
+  }
 }
 
-.right-container {
-  gap: 5rem;
+nav button {
+  padding: 1em;
+  color: var(--primary-content);
+  background: rgba(0, 0, 0, 0);
+  border-width: 0;
+  border-radius: 1em;
+  font-size: 1.5em;
+}
+
+button#hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  nav>ul {
+    display: none;
+  }
+
+  nav>ul.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  button#hamburger {
+    display: block;
+  }
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--card-bg);
   padding: 15px 30px;
   border-radius: 12px;

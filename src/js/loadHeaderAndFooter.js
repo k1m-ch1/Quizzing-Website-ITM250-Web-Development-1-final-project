@@ -1,8 +1,8 @@
 // need to dynamically load footer
 
 const toggleSwitchContent = {
-  dark : "Switch To Light Mode",
-  light : "Switch To Dark Mode"
+  dark : "&#9728",
+  light : "&#127769"
 };
 
 const pathPrefix = window.location.pathname.startsWith('/src/') ? '/src' : '';
@@ -37,5 +37,10 @@ injectContent(`${pathPrefix}/nav.html`, 'nav').then(() => {
       themeToggleButton.innerHTML = toggleSwitchContent["dark"];
     }
     setTheme();
+  })
+
+  document.getElementById("hamburger").addEventListener('click', function () {
+    document.querySelector("nav>ul").classList.toggle("active");
+    console.log(document.querySelector("nav>ul"));
   })
 });

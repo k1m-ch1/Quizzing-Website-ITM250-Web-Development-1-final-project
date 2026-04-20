@@ -54,6 +54,11 @@ main>section:not(#hero-section) {
   line-height: 1.15;
   max-width: 700px;
   text-align: center;
+
+  @media screen and (max-width: 700px) {
+    font-size: 4rem;
+    margin: 0 2rem;
+  }
 }
 
 #hero-section p {
@@ -71,8 +76,8 @@ main>section:not(#hero-section) {
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.75rem 2rem;
-  background: var(--primary-content);
-  color: var(--primary-dark);
+  color: var(--secondary-content);
+  background: var(--secondary);
   font-weight: 700;
   font-size: 0.95rem;
   text-decoration: none;
@@ -83,7 +88,8 @@ main>section:not(#hero-section) {
 }
 
 #hero-section a:hover {
-  background: #fff;
+  color: var(--secondary);
+  background: var(--secondary-content);
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
